@@ -5,8 +5,8 @@ Contactually's environmental variable management CLI. It updates your local `.en
 
 
 ### Instantiation
+`envManager.js`
 ```javascript
-envManager.js
 import envManager from 'env-manager'
 
 envManager({
@@ -14,8 +14,8 @@ envManager({
   productionCommand: (key, value) => `heroku config:set ${key}=${value} prod`
 })
 ```
+`package.json`
 ```javascript
-package.json
 
   "scripts": {
     "env:set": "node ./envManager",
@@ -26,6 +26,6 @@ now running `yarn env:set` will result in the following prompt
 
 ### Configuration
 
-  * envFilePath: `String` *Optional* this is the path to your local .env file. The default is "./.env"
-  * stagingCommand: `Function` a function which accepts a key and value, and returns the staging update command. This will be logged and executed in the terminal
-  * productionCommand: `Function` a function which accepts a key and value, and returns the production update command. This will be logged and executed in the terminal
+  * **envFilePath**: `String` *Optional* this is the path to your local .env file. The default is "./.env"
+  * **stagingCommand**: `Function` a function which accepts a key and value, and returns the staging update command. This will be logged and executed in the terminal
+  * **productionCommand**: `Function` a function which accepts a key and value, and returns the production update command. This will be logged and executed in the terminal
