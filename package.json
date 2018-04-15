@@ -1,7 +1,7 @@
 {
   "name": "env-manager-cli",
   "description": "a manager for local and heroku environmental variables",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./lib/index.js",
   "dependencies": {
     "colors": "^1.2.1",
