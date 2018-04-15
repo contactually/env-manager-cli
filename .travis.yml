@@ -9,4 +9,7 @@ cache:
 
 script:
   - yarn lint
-  - node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  - yarn test --coverage
+
+after_success:
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
