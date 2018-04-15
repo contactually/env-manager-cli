@@ -1,5 +1,5 @@
 {
-  "name": "dotenv-manager",
+  "name": "env-manager-cli",
   "description": "a manager for local and heroku environmental variables",
   "version": "1.0.0",
   "main": "./lib/index.js",
@@ -9,7 +9,8 @@
   },
   "scripts": {
     "test": "jest",
-    "lint": "./node_modules/.bin/eslint lib/**"
+    "lint": "./node_modules/.bin/eslint lib/**",
+    "prepublish": "yarn lint && yarn test"
   },
   "repository": {
     "type": "git",

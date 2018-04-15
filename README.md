@@ -6,7 +6,13 @@ Contactually's environmental variable management CLI. It updates your local `.en
 ![Demo](./demo.gif)
 
 
-### Instantiation
+### Installation
+
+```
+yarn add --dev env-manager-cli
+```
+
+### Implementation
 `envManager.js`
 ```javascript
 import envManager from 'env-manager'
