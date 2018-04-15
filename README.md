@@ -1,4 +1,4 @@
-# dotenv-manager
+# env-manager-cli
 Contactually's environmental variable management CLI. It updates your local `.env` as well as runs the commands for your staging and production values.
 
 [![Build Status](https://travis-ci.org/contactually/env-manager.svg?branch=master)](https://travis-ci.org/contactually/env-manager)
