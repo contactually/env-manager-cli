@@ -3,7 +3,7 @@ Contactually's environmental variable management CLI. It updates your local `.en
 
 [![Build Status](https://travis-ci.org/contactually/env-manager.svg?branch=master)](https://travis-ci.org/contactually/env-manager)
 
-![Demo](./demo.gif)
+![Demo](https://github.com/contactually/env-manager/blob/master/demo.gif?raw=true)
 
 
 ### Installation
