@@ -1,7 +1,7 @@
 {
   "name": "env-manager-cli",
   "description": "a manager for local and heroku environmental variables",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./lib/index.js",
   "dependencies": {
     "colors": "^1.2.1",
@@ -29,6 +29,9 @@
   },
   "homepage": "https://github.com/Brantron/dotenv-manager#readme",
   "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
     "moduleDirectories": [
       "node_modules"
     ],
@@ -55,8 +58,12 @@
     }
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "babel-preset-env": "^1.6.1",
     "eslint": "^4.19.1",
     "eslint-plugin-prettier": "^2.6.0",
+    "inquirer-test": "^2.0.1",
     "jest": "^22.4.3",
     "memfs": "^2.8.0",
     "prettier": "^1.12.0"

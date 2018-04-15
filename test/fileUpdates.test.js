@@ -10,11 +10,6 @@ const {
   updateVarByEnvironment
 } = require("../lib/fileUpdates");
 
-const envPath = path.join(__dirname, ".env");
-const key = "TEST";
-const val = "test_val";
-const commands = { stagingCommand: jest.fn(), productionCommand: jest.fn() };
-
 jest.mock("fs", () => ({
   readFile: jest.fn((path, flag, callback) => {
     callback();
@@ -25,6 +20,12 @@ jest.mock("fs", () => ({
 
 jest.mock("child_process", () => ({ exec: jest.fn() }));
 jest.mock("inquirer", () => ({ prompt: cb => cb }));
+
+let consoleLogCalledWith;
+const envPath = path.join(__dirname, ".env");
+const key = "TEST";
+const val = "test_val";
+const commands = { stagingCommand: jest.fn(), productionCommand: jest.fn() };
 
 describe("file updates", () => {
   beforeEach(() => {
