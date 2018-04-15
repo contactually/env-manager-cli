@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Brantron/dotenv-manager.git"
+    "url": "git+https://github.com/contactually/env-manager-cli.git"
   },
   "keywords": [
     "heroku",
@@ -25,9 +25,9 @@
   "author": "Brandon Lawrence",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Brantron/dotenv-manager/issues"
+    "url": "https://github.com/contactually/env-manager-cli/issues"
   },
-  "homepage": "https://github.com/Brantron/dotenv-manager#readme",
+  "homepage": "https://github.com/contactually/env-manager-cli#readme",
   "jest": {
     "transform": {
       "^.+\\.js$": "babel-jest"
