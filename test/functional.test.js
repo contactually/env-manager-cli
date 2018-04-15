@@ -34,19 +34,25 @@ const productionVarInputs = [
 describe("envManager", () => {
   it("sets local variables", async test => {
     const results = await run([cliPath], localVarInputs);
-    expect(results).toMatch(commands.local);
-    test();
+    setTimeout(() => {
+      expect(results).toMatch(commands.local);
+      test();
+    }, 500);
   });
 
   it("runs staging command", async test => {
     const results = await run([cliPath], stagingVarInputs);
-    expect(results).toMatch(commands.staging);
-    test();
+    setTimeout(() => {
+      expect(results).toMatch(commands.staging);
+      test();
+    }, 500);
   });
 
   it("runs production command", async test => {
     const results = await run([cliPath], productionVarInputs);
-    expect(results).toMatch(commands.production);
-    test();
+    setTimeout(() => {
+      expect(results).toMatch(commands.production);
+      test();
+    }, 500);
   });
 });
