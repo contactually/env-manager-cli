@@ -1,4 +1,4 @@
-const envManager = require("./index.js");
+const envManager = require("../lib/index.js");
 
 envManager({
   stagingCommand: (key, value) => `heroku config:set ${key}=${value} test`,

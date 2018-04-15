@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 6
+  - 8
 
 cache:
   yarn: true
@@ -9,3 +9,4 @@ cache:
 
 script:
   - yarn lint
+  - yarn test

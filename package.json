@@ -31,9 +31,15 @@
     "moduleDirectories": [
       "node_modules"
     ],
-    "moduleFileExtensions": [ "js" ],
+    "moduleFileExtensions": [
+      "js"
+    ],
     "collectCoverage": true,
-    "coverageReporters": ["json", "lcov", "text"],
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text"
+    ],
     "coverageDirectory": "coverage",
     "collectCoverageFrom": [
       "**/lib/*.js"
@@ -51,6 +57,7 @@
     "eslint": "^4.19.1",
     "eslint-plugin-prettier": "^2.6.0",
     "jest": "^22.4.3",
+    "memfs": "^2.8.0",
     "prettier": "^1.12.0"
   }
 }
