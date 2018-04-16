@@ -16,7 +16,7 @@ yarn add --dev env-manager-cli
 ### Implementation
 `envManager.js`
 ```javascript
-import envManager from 'env-manager'
+import envManager from 'env-manager-cli'
 
 envManager({
   stagingCommand: (key, value) => `heroku config:set ${key}=${value} test`,
