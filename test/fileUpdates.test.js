@@ -122,6 +122,10 @@ describe("file updates", () => {
       runUpdateWithEnv("production");
       expect(commands.productionCommand.mock.calls.length).toBe(1);
     });
+
+    it("returns false if no environments match", () => {
+      expect(runUpdateWithEnv("nonsense")).toBe(false);
+    });
   });
 
   describe("processUserInputs", () => {
