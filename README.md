@@ -1,10 +1,10 @@
 # env-manager-cli
 Contactually's environmental variable management CLI. It updates your local `.env` as well as runs the commands for your staging and production values.
 
-[![Build Status](https://travis-ci.org/contactually/env-manager.svg?branch=master)](https://travis-ci.org/contactually/env-manager)
+[![Build Status](https://travis-ci.org/contactually/env-manager-cli.svg?branch=master)](https://travis-ci.org/contactually/env-manager-cli)
 [![Coverage Status](https://coveralls.io/repos/github/contactually/env-manager-cli/badge.svg?branch=master)](https://coveralls.io/github/contactually/env-manager-cli?branch=master)
 
-![Demo](https://github.com/contactually/env-manager/blob/master/demo.gif?raw=true)
+![Demo](https://github.com/contactually/env-manager-cli/blob/master/demo.gif?raw=true)
 
 
 ### Installation
